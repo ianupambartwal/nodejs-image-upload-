@@ -1,0 +1,17 @@
+<h3><h3>File Upload</h3>
+
+<form action="/employee" method="POST" enctype="multipart/form-data" autocomplete="off">
+    <input type="hidden" name="_id" value="{{employee._id}}">
+    <div class="form-group">
+
+        
+        <div class="form-group">
+            <label>File</label>
+            <input type="file" class="form-control" name="image">
+        </div> 
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"> Submit</button>
+        <a class="btn btn-secondary" href="/employee/list"> View All</a>
+    </div>
+</form>
